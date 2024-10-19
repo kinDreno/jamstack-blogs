@@ -1,3 +1,6 @@
+<h1>Just started making this project as of October 19, 2024.</h1>
+<i>Status: Unfinished</i>
+
 ## Getting Started
 
 ```bash
