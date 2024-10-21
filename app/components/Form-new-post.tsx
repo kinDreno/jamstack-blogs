@@ -1,5 +1,5 @@
   'use client'
-  import React, { ChangeEvent, FormEvent, useState } from 'react'
+  import { ChangeEvent, FormEvent, useState } from 'react'
   import { FormData } from '../types/blog'
   
   const FormNewPost = () => {
@@ -12,12 +12,12 @@
   const handleChange = (e : 
     ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-  e.preventDefault()
+    
   const {name, value} = e.target;
-  setFormData({...formData, [name]: value,});
+  setFormData({...formData, [name]: value});
   }
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e : FormEvent<HTMLFormElement>) => {
   e.preventDefault()
   console.log(formData)
   }
@@ -39,7 +39,7 @@
     name='content' value={formData.content} onChange={handleChange}
   />
           </div>
-          <button type='submit' className='bg-slate-900 hover:bg-slate-700 font-bold w-full text-white p-4 rounded-md' >Submit</button>
+          <button type='submit' className='bg-slate-900 hover:bg-slate-700 font-bold w-full text-white p-4 rounded-md'>Submit</button>
       </form>
     )
   }
