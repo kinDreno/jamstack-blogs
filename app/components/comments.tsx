@@ -9,9 +9,10 @@ const Comments = () => {
             <article className='text-slate-900 font-bold mr-2 '>John Doe</article>
             <article className='text-white'>10-November-2023</article>
         </section>
-        <p>NIGGAAA THAT SO ASS</p>
+        <p>This is just an example.</p>
         </li>
       </ul>
+      {/* Dynamic Routings Isn't built yet. */}
     </div>
   )
 }
