@@ -30,7 +30,9 @@ yarn-error.log*
 .env
 
 # Prisma folder
-prisma/
+/prisma
+/prisma/*
+
 
 # vercel
 .vercel
